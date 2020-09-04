@@ -11,7 +11,6 @@
 
 	//fetch data
 	$posts = mysqli_fetch_all($result, MYSQLI_ASSOC);
-	// var_dump($posts);
 
 	//free result
 	mysqli_free_result($result);
