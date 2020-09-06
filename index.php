@@ -4,7 +4,7 @@
 	require('config/connection.php');
 
 	// create query
-	$query = 'SELECT * FROM posts';
+	$query = 'SELECT * FROM posts ORDER BY created_at DESC';
 
 	//get results
 	$result = mysqli_query($conn, $query);

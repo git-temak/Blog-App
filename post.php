@@ -40,7 +40,7 @@
 	<div class="container text-center my-5">
 		<a class="btn btn-primary float-left" href="<?php echo ROOT_URL; ?>">Back</a>
 		<h1 class="text-uppercase"><?php echo $post['title']; ?></h1>
-		<img src="/uploads/<?php echo $post['image']; ?>" class="img-fluid rounded">
+		<img src="<?php echo ROOT_URL."uploads/". $post['image']; ?>" class="w-50 pb-3 rounded">
 		<div class="card text-white bg-primary mb-3">
 		  <div class="card-header">Created on <?php echo $post['created_at']; ?> by <span class="font-weight-bold"><?php echo $post['author']; ?></span>
 		  	
