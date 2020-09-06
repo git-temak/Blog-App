@@ -8,6 +8,9 @@
 		@media (min-width: 1024px){
 			.cst-crd{max-width: 350px;}
 		}
+		@media (min-width: 768px){
+			.w-lg-50{width: 50%;}
+		}
 	</style>
 </head>
 <body>
