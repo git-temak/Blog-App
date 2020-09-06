@@ -17,6 +17,9 @@
 		}
 	}
 
+	//get image URL
+	$imageURL = ROOT_URL."uploads/";
+
 	//get ID
 	$id = mysqli_real_escape_string($conn, $_GET['id']);
 
@@ -40,7 +43,7 @@
 	<div class="container text-center my-5">
 		<a class="btn btn-primary float-left" href="<?php echo ROOT_URL; ?>">Back</a>
 		<h1 class="text-uppercase"><?php echo $post['title']; ?></h1>
-		<img src="<?php echo ROOT_URL."uploads/". $post['image']; ?>" class="w-50 pb-3 rounded">
+		<?php if(!empty($post['image'])){echo "<img class='w-50 pb-3 rounded' src='".$imageURL.$post['image']."'>";} ?>
 		<div class="card text-white bg-primary mb-3">
 		  <div class="card-header">Created on <?php echo $post['created_at']; ?> by <span class="font-weight-bold"><?php echo $post['author']; ?></span>
 		  	
